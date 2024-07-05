@@ -1,0 +1,19 @@
+import java.awt.*;
+import java.awt.event.*;
+class TF extends Frame implements ActionListener
+{
+	TextField t1,t2,t3;
+	GridLayout g;
+	Label l1,l2,l3;
+	public TF()
+	{
+		g=new GridLayout(3,3,5,5);
+		setLayout(g);
+		t1=new TextField(15);
+		t2=new TextField(15);
+		t3=new TextField(15);
+		t1.setBackground(Color.cyan);
+		t2.addActionListener(this);
+		t2.setEchoChar('*');
+		t3.setEditable(false);
+}
